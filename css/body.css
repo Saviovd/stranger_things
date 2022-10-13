@@ -1,0 +1,30 @@
+body{
+    height: auto;
+    height: 100vh;
+}
+
+.body-efeito{
+    background: linear-gradient(to right, rgba(0, 0, 0) 20%, rgba(0, 0, 0, 0.0) 80%), url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .body-efeito{
+    background-image: url('../assets/background-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .body-efeito{
+        padding: 0;
+    }
+}
